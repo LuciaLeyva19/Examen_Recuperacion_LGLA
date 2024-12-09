@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:vm="clr-namespace:Examen_Recuperacion_LGLA.VistaModelo"
+             x:Class="Examen_Recuperacion_LGLA.Vista.Page1">
+
+    <StackLayout Padding="20">
+        <Label Text="Frecuencia Cardiaca"
+               FontSize="30"
+               HorizontalOptions="Center" />
+
+        <Entry Placeholder="Latidos en 15 segundos"
+               Keyboard="Numeric"
+               Text="{Binding LatidosEn15Seg}" />
+
+        <Label Text="Frecuencia Cardiaca:"
+               FontAttributes="Bold"
+               FontSize="18"
+               HorizontalOptions="Start" />
+        <Label Text="{Binding FrecuenciaCardiaca}"
+               FontSize="18"
+               HorizontalOptions="Start" />
+
+        <Label Text="Estado de Frecuencia Cardiaca:"
+               FontAttributes="Bold"
+               FontSize="18"
+               HorizontalOptions="Start" />
+        <Label Text="{Binding EstadoFrecuencia}"
+               FontSize="18"
+               HorizontalOptions="Start" />
+    </StackLayout>
+</ContentPage>
